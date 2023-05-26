@@ -7,6 +7,8 @@ from pytube import YouTube, Playlist
 
 
 #INFO HUB
+TOKEN = 'MTExMTQ2NDQ3NzQ1NjYwOTQwMQ.GPtbwb._kBqMNopxm8XWEksxd-_i9hK2j-fIR_tllW2M0'
+
 
 def swirly(placeholder):
     random.shuffle(placeholder)
@@ -63,4 +65,4 @@ intents.message_content = True
 
 # Runs the Bot
 client = MyClient(intents=intents)
-client.run(os.environ["DISCORD_TOKEN"])
+client.run(TOKEN)
